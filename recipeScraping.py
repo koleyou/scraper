@@ -22,6 +22,8 @@ def recipeFormater(name, ingredients, directions):
     for direction in directions:
         recipe += direction +'\n\n'
     return recipe
+
+
 def allRecipesScraper(paths):
     results = []
     for path in paths:

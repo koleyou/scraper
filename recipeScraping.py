@@ -59,9 +59,14 @@ def foodNetworkScaper(paths):
         time.sleep(1)
     return results
 
+f = open('cookbook.txt','w')
+
 
 for result in allRecipesScraper(allrecipespath):
-    print(result)
+    # print(result)
+    f.write(result)
+    print('Written')
+f.close()
 #foodNetworkScaper(foodNetworkPath)
 #path = 'https://www.epicurious.com/recipes/food/views/classic-chicken-pho-ph-ga'
 #source = requests.get(path).text
